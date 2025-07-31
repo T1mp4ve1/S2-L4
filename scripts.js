@@ -152,11 +152,11 @@ console.log("___Esercizio_9___");
 
 function cutString(str) {
   if (str.length <= 2) {
-    return "";
+    return "Attenzione: la parola contiene meno di 2 caratteri";
   }
   return str.slice(1, -1);
 }
-const cutString_out = cutString("EPICODE");
+const cutString_out = cutString("EP");
 console.log(cutString_out);
 
 /* ESERCIZIO 10
