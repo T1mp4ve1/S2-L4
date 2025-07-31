@@ -135,11 +135,10 @@ console.log("___Esercizio_8___");
 function upperFirst(str) {
   return str
     .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map((word) => word.charAt(0).toLowerCase() + word.slice(1))
     .join(" ");
 }
-
-const upperFirst_out = upperFirst("Epicode Esercizzi Difficcili");
+const upperFirst_out = upperFirst("EpIcode EseRcizzi Difficcili");
 console.log(upperFirst_out);
 
 /* ESERCIZIO 9
@@ -152,11 +151,11 @@ console.log("___Esercizio_9___");
 
 function cutString(str) {
   if (str.length <= 2) {
-    return "Attenzione: la parola contiene meno di 2 caratteri";
+    return "Attenzione: la parola contiene meno di 2 caratteri!";
   }
   return str.slice(1, -1);
 }
-const cutString_out = cutString("EP");
+const cutString_out = cutString("EPI");
 console.log(cutString_out);
 
 /* ESERCIZIO 10
